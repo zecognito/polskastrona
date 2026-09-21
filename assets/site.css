@@ -11,3 +11,5 @@
 @media(max-width:560px){
   .answer,.summary,.warning{padding:20px 19px 21px!important}
 }
+/* Article reading progress + subtle mobile back control */
+.reading-progress{position:absolute;left:0;bottom:-1px;width:100%;height:3px;background:transparent;overflow:hidden}.reading-progress>span{display:block;width:0;height:100%;background:var(--red);transition:width .08s linear}.article-back{position:fixed;left:18px;bottom:18px;z-index:30;display:inline-flex;align-items:center;gap:7px;padding:9px 12px;border:1px solid rgba(16,42,76,.12);border-radius:999px;background:rgba(255,255,255,.9);box-shadow:0 7px 22px rgba(16,42,76,.09);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:var(--ink);font-size:13px;font-weight:750;opacity:.82}.article-back:hover{opacity:1}.article-back svg{width:14px;height:14px}@media(min-width:901px){.article-back{left:24px;bottom:24px}}
