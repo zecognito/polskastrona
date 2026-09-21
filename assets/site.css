@@ -17,3 +17,7 @@
 .article-back-wrap{width:min(1180px,calc(100% - 40px));margin:0 auto}
 @media(max-width:820px){.article-back-wrap{width:min(100% - 32px,1180px)}}
 @media(max-width:560px){.article-back-wrap{width:calc(100% - 36px)}.article-back{margin-top:26px!important}}
+/* Refined article back link: quiet editorial control */
+.article-back{border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;padding:6px 0!important;gap:6px!important;font-size:13px!important;font-weight:750!important;color:var(--muted)!important;opacity:1!important;transition:color .18s ease,transform .18s ease}
+.article-back:hover{color:var(--ink)!important;transform:translateX(-2px)}
+.article-back svg{width:13px!important;height:13px!important}
