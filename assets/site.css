@@ -21,3 +21,6 @@
 .article-back{border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;padding:6px 0!important;gap:6px!important;font-size:13px!important;font-weight:750!important;color:var(--muted)!important;opacity:1!important;transition:color .18s ease,transform .18s ease}
 .article-back:hover{color:var(--ink)!important;transform:translateX(-2px)}
 .article-back svg{width:13px!important;height:13px!important}
+/* Branded text selection */
+::selection{background:var(--red);color:#fff}
+::-moz-selection{background:var(--red);color:#fff}
