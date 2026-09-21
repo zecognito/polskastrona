@@ -1,0 +1,40 @@
+# Szablon poradnika PolskaStrona.com
+
+## H1
+Naturalny tytuł po polsku. Amerykański termin zachowujemy, gdy jest faktycznie używany lub pomaga użytkownikowi rozpoznać temat.
+
+## Odpowiedź w 30 sekund
+2–4 zdania odpowiadające bezpośrednio na pytanie.
+
+## W skrócie
+3–5 najważniejszych punktów.
+
+## Spis treści
+Generowany z H2/H3.
+
+## Główne wyjaśnienie
+Krótkie sekcje, prosty język, zero sztucznego SEO-intro.
+
+## Przykład
+Realistyczny scenariusz, jeśli pomaga zrozumieć temat.
+
+## Na co uważać
+Najczęstsze błędy, koszty, wyjątki lub ryzyka.
+
+## Co dalej?
+2–5 logicznych kolejnych poradników.
+
+## Oficjalne źródła
+Preferowane źródła pierwotne: agencje federalne, stanowe, regulatorzy i oficjalna dokumentacja.
+
+## Metadane redakcyjne
+- Sprawdzono: YYYY-MM-DD
+- Wrażliwość na zmiany: niska / średnia / wysoka
+- Następna kontrola: data lub interwał
+- Źródła pierwotne: lista
+
+## Styl
+- Polski pierwszy.
+- Używamy amerykańskich terminów (np. credit score, mortgage, 401(k)) tam, gdzie naturalnie funkcjonują w życiu Polaków w USA.
+- UI i zwykłe pojęcia tłumaczymy poprawnie: „kredyt”, nie „credit”.
+- Czytelność mobilna i dla starszych odbiorców: komfortowy rozmiar tekstu, krótkie akapity, wyraźne nagłówki.
