@@ -7,3 +7,7 @@
   .answer,.summary,.warning{padding:14px 19px 17px!important}
   .answer h2,.summary h2,.warning h2{margin-top:0!important}
 }
+/* Callout card padding final balance */
+@media(max-width:560px){
+  .answer,.summary,.warning{padding:20px 19px 21px!important}
+}
