@@ -18,6 +18,11 @@ Production status: not merged, deployed, or published
 
 Status: **pre-launch candidate ready for owner review**
 
+The approved full homepage design was restored after the initial staging build
+was found to contain a reduced placeholder shell. The restored homepage keeps
+the approved visual system, full search hero, eight topic cards, three guided
+journeys, five popular guides, and state-information panel.
+
 - 38 HTML pages parsed successfully
 - Exactly 30 article pages detected
 - 38 unique canonical URLs
@@ -29,6 +34,8 @@ Status: **pre-launch candidate ready for owner review**
 - 0 JavaScript syntax errors
 - 0 CSS brace-balance errors
 - 0 whitespace errors from `git diff --check`
+- Homepage search routes the current launch topics to the matching guide
+- Homepage navigation, topic cards, journeys, and popular guides point to valid launch URLs
 
 ## Preservation checks
 
