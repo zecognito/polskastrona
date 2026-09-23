@@ -14,7 +14,7 @@
 <meta property="og:url" content="https://zapytajhanki.com/">
 <meta name="twitter:card" content="summary">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Zapytaj Hanki","url":"https://zapytajhanki.com/","inLanguage":"pl"}</script>
-<script src="/assets/site.js" defer></script>
+<script src="assets/site.js" defer></script>
 <style>
 :root{--ink:#111827;--muted:#667085;--line:#e8e7e3;--paper:#faf9f6;--white:#fff;--red:#cf2634;--soft:#f2f1ed}
 *{box-sizing:border-box} body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
@@ -526,7 +526,7 @@ header{box-shadow:none!important;border-bottom:1px solid #f1dfe5!important}.nav{
 .real-hanka-logo img{display:block;width:100%;height:100%;object-fit:contain;object-position:left center}
 .hero-real{padding:0!important;background:#fff!important;border:0!important;overflow:visible!important}
 .hero-real:after{display:none!important}
-.hero-banner{width:100%;aspect-ratio:3/1;background-image:url('/assets/file_00000000110081f587399cd171d113f8.png');background-size:cover;background-position:center center;background-repeat:no-repeat}
+.hero-banner{width:100%;aspect-ratio:3/1;background-image:url('assets/file_00000000110081f587399cd171d113f8.png');background-size:cover;background-position:center center;background-repeat:no-repeat}
 .hero-search-wrap{position:relative;margin-top:-34px;z-index:3}
 .hero-real .search{max-width:860px!important;margin:0 auto!important;box-shadow:0 16px 42px rgba(61,72,64,.18)!important;border:1px solid #efcbd7!important;background:#fff!important}
 .hero-real .search button{background:#ed5f91!important}
@@ -534,22 +534,41 @@ header{box-shadow:none!important;border-bottom:1px solid #f1dfe5!important}.nav{
 @media(max-width:560px){header .wrap{padding-left:14px;padding-right:14px}.real-hanka-logo{width:205px;height:48px!important}.hero-banner{aspect-ratio:1.25/1;background-size:auto 100%;background-position:69% center}.hero-search-wrap{margin-top:-23px;padding:0 16px!important}.hero-real .search{min-height:54px!important}.hero-real .search input{font-size:13px!important}.hero-real .search input::placeholder{font-size:11.5px!important}.hero-real .search button{min-width:88px!important}.topic-rail{padding-top:17px}}
 @media(max-width:390px){.real-hanka-logo{width:185px}.hero-banner{aspect-ratio:1.12/1;background-position:68% center}}
 
+
+/* HANKA V5 — exact supplied artwork, local-preview safe */
+.hero-real{padding:0!important;background:#fff!important;border:0!important;overflow:visible!important}
+.hero-real .hero-banner{display:block!important;width:100%!important;aspect-ratio:3/1!important;background-image:url('assets/file_00000000110081f587399cd171d113f8.png')!important;background-size:cover!important;background-position:center!important;background-repeat:no-repeat!important}
+.hero-real .hero-search-wrap{position:relative!important;z-index:5!important;margin-top:-34px!important}
+.real-hanka-logo img{content:url('assets/file_00000000f95481f8a74cc82e08ed2c2f.png')}
+@media(max-width:560px){
+ .real-hanka-logo{width:210px!important;height:50px!important}
+ .hero-real .hero-banner{aspect-ratio:1.28/1!important;background-size:auto 100%!important;background-position:68% center!important}
+ .hero-real .hero-search-wrap{margin-top:-24px!important}
+}
+
 </style>
 </head>
 <body>
 <header><div class="wrap nav">
-  <a class="brand hankabrand real-hanka-logo" href="/" aria-label="Zapytaj Hanki"><img src="/assets/file_00000000f95481f8a74cc82e08ed2c2f.png" alt="Zapytaj Hanki — Ameryka po polsku"></a>
+  <a class="brand hankabrand real-hanka-logo" href="/" aria-label="Zapytaj Hanki"><img src="assets/file_00000000f95481f8a74cc82e08ed2c2f.png" alt="Zapytaj Hanki — Ameryka po polsku"></a>
   <nav class="links" id="siteNav" aria-label="Główna nawigacja"><a href="/pieniadze/">Pieniądze</a><a href="/dom/">Dom</a><a href="/samochod/">Samochód</a><a href="/praca/">Praca</a><a href="/emerytura/">Emerytura</a><a href="#tematy">Więcej</a></nav>
   <button class="menu" type="button" aria-label="Otwórz menu" aria-controls="siteNav" aria-expanded="false">Menu</button>
 
 </div></header>
 
 <main>
-<section class="hero"><div class="wrap">
-  <div class="hero-grid"><div class="hero-copy"><div class="eyebrow">AMERYKA PO POLSKU</div><h1>Nie wiesz?<br><em>Zapytaj Hanki.</em></h1><p class="lead">Praktyczne odpowiedzi o życiu w USA — po polsku. Hanka pomaga znaleźć konkretną odpowiedź i pokazuje, gdzie sprawdzić najważniejsze informacje.</p></div><div class="hanka-hero" aria-hidden="true"><div class="hero-bubble">Cześć! 👋</div><div class="hanka-portrait"><div class="portrait-hair"></div><div class="portrait-face"><span class="portrait-eye left"></span><span class="portrait-eye right"></span><span class="portrait-smile"></span></div><div class="portrait-body"></div></div><div class="hero-note"><b>Po ludzku.</b><span>Bez urzędowego bełkotu.</span></div></div></div>
-  <form class="search" id="site-search" role="search"><label class="sr-only" for="site-search-input">Zapytaj Hanki</label><input id="site-search-input" name="q" type="search" autocomplete="off" placeholder="Np. credit score, mortgage, W-2..."><button type="submit">Szukaj</button></form>
-  <div class="quick"><a class="pill" href="/pieniadze/credit-score/">credit score</a><a class="pill" href="/#tematy">prawo jazdy</a><a class="pill" href="/dom/mortgage/">mortgage</a><a class="pill" href="/emerytura/social-security/">Social Security</a><a class="pill" href="/praca/w2-vs-1099/">W-2 vs 1099</a></div>
-</div></section>\n\n<section class="topic-rail"><div class="wrap"><div class="topic-scroll"><a class="topic-tile" href="/pieniadze/"><span class="topic-emoji">💵</span>Pieniądze</a><a class="topic-tile" href="/dom/"><span class="topic-emoji">🏠</span>Dom</a><a class="topic-tile" href="/samochod/"><span class="topic-emoji">🚗</span>Samochód</a><a class="topic-tile" href="/#tematy"><span class="topic-emoji">🪪</span>Dokumenty</a><a class="topic-tile" href="/praca/"><span class="topic-emoji">💼</span>Praca</a><a class="topic-tile" href="/#tematy"><span class="topic-emoji">❤️</span>Zdrowie</a><a class="topic-tile" href="/emerytura/"><span class="topic-emoji">🪑</span>Emerytura</a><a class="topic-tile" href="/podatki/"><span class="topic-emoji">🧾</span>Podatki</a><a class="topic-tile" href="/illinois/"><span class="topic-emoji">🇺🇸</span>Stany USA</a></div></div></section>\n\n<section class="home-dashboard"><div class="wrap"><div class="dash-grid"><div class="popular-box"><h2 class="dash-title"><span>★</span> Popularne tematy</h2><div class="popular-list"><a class="popular-item" href="/illinois/prawo-jazdy/"><b>1</b><span>Jak zrobić prawo jazdy w Illinois?</span><i>›</i></a><a class="popular-item" href="/emerytura/social-security/"><b>2</b><span>Social Security — jak to działa?</span><i>›</i></a><a class="popular-item" href="/texas/"><b>3</b><span>Podatki i życie w Teksasie</span><i>›</i></a><a class="popular-item" href="/pieniadze/credit-score/"><b>4</b><span>Jak zbudować credit score?</span><i>›</i></a><a class="popular-item" href="/emerytura/"><b>5</b><span>Emerytura w USA</span><i>›</i></a></div></div><div class="answers-box"><h2 class="dash-title">Polecane odpowiedzi</h2><div class="answer-cards"><a class="answer-card" href="/pieniadze/credit-score/"><span class="mini">PIENIĄDZE</span><strong>Credit score w USA — jak działa i jak go zbudować?</strong><span class="go">Czytaj →</span></a><a class="answer-card" href="/emerytura/social-security/"><span class="mini">EMERYTURA</span><strong>Social Security — jak działa amerykańska emerytura?</strong><span class="go">Czytaj →</span></a><a class="answer-card" href="/samochod/kupno-samochodu/"><span class="mini">SAMOCHÓD</span><strong>Jak kupić samochód w USA bez zgadywania?</strong><span class="go">Czytaj →</span></a></div></div></div></div></section>\n\n<section class="trust-strip"><div class="wrap trust-inner"><span><b>✓</b> Praktyczne wyjaśnienia</span><span><b>✓</b> Źródła i oficjalne informacje</span><span><b>✓</b> 10 stanów i setki przewodników</span></div></section>
+<section class="hero hero-real">
+  <div class="hero-banner" role="img" aria-label="Zapytaj Hanki — Ameryka po polsku"></div>
+  <div class="wrap hero-search-wrap">
+    <form class="search" id="site-search" role="search"><label class="sr-only" for="site-search-input">Zapytaj Hanki</label><input id="site-search-input" name="q" type="search" autocomplete="off" placeholder="Czego szukasz? Np. prawo jazdy, Social Security, podatki..."><button type="submit">Szukaj</button></form>
+  </div>
+</section>
+
+<section class="topic-rail"><div class="wrap"><div class="topic-scroll"><a class="topic-tile" href="/pieniadze/"><span class="topic-emoji">💵</span>Pieniądze</a><a class="topic-tile" href="/dom/"><span class="topic-emoji">🏠</span>Dom</a><a class="topic-tile" href="/samochod/"><span class="topic-emoji">🚗</span>Samochód</a><a class="topic-tile" href="/#tematy"><span class="topic-emoji">🪪</span>Dokumenty</a><a class="topic-tile" href="/praca/"><span class="topic-emoji">💼</span>Praca</a><a class="topic-tile" href="/#tematy"><span class="topic-emoji">❤️</span>Zdrowie</a><a class="topic-tile" href="/emerytura/"><span class="topic-emoji">🪑</span>Emerytura</a><a class="topic-tile" href="/podatki/"><span class="topic-emoji">🧾</span>Podatki</a><a class="topic-tile" href="/illinois/"><span class="topic-emoji">🇺🇸</span>Stany USA</a></div></div></section>
+
+<section class="home-dashboard"><div class="wrap"><div class="dash-grid"><div class="popular-box"><h2 class="dash-title"><span>★</span> Popularne tematy</h2><div class="popular-list"><a class="popular-item" href="/illinois/prawo-jazdy/"><b>1</b><span>Jak zrobić prawo jazdy w Illinois?</span><i>›</i></a><a class="popular-item" href="/emerytura/social-security/"><b>2</b><span>Social Security — jak to działa?</span><i>›</i></a><a class="popular-item" href="/texas/"><b>3</b><span>Podatki i życie w Teksasie</span><i>›</i></a><a class="popular-item" href="/pieniadze/credit-score/"><b>4</b><span>Jak zbudować credit score?</span><i>›</i></a><a class="popular-item" href="/emerytura/"><b>5</b><span>Emerytura w USA</span><i>›</i></a></div></div><div class="answers-box"><h2 class="dash-title">Polecane odpowiedzi</h2><div class="answer-cards"><a class="answer-card" href="/pieniadze/credit-score/"><span class="mini">PIENIĄDZE</span><strong>Credit score w USA — jak działa i jak go zbudować?</strong><span class="go">Czytaj →</span></a><a class="answer-card" href="/emerytura/social-security/"><span class="mini">EMERYTURA</span><strong>Social Security — jak działa amerykańska emerytura?</strong><span class="go">Czytaj →</span></a><a class="answer-card" href="/samochod/kupno-samochodu/"><span class="mini">SAMOCHÓD</span><strong>Jak kupić samochód w USA bez zgadywania?</strong><span class="go">Czytaj →</span></a></div></div></div></div></section>
+
+<section class="trust-strip"><div class="wrap trust-inner"><span><b>✓</b> Praktyczne wyjaśnienia</span><span><b>✓</b> Źródła i oficjalne informacje</span><span><b>✓</b> 10 stanów i setki przewodników</span></div></section>
 
 <section class="section" id="tematy"><div class="wrap">
  <div class="section-head"><div><div class="eyebrow">Tematy</div><h2>Wszystko w jednym miejscu.</h2></div><p>Nie musisz znać urzędowego języka. Wybierz temat albo po prostu wyszukaj problem.</p></div>
