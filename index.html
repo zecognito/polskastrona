@@ -651,6 +651,62 @@ header{box-shadow:none!important;border-bottom:1px solid #f1dfe5!important}.nav{
   }
 }
 
+
+/* HANKA MOBILE — dashboard true viewport sizing */
+@media(max-width:560px){
+  .home-dashboard{width:100%!important;max-width:100vw!important;overflow:hidden!important}
+  .home-dashboard>.wrap{
+    width:auto!important;
+    max-width:none!important;
+    margin:0 16px!important;
+    padding:0!important;
+  }
+  .home-dashboard .dash-grid{
+    display:block!important;
+    width:100%!important;
+    max-width:100%!important;
+  }
+  .home-dashboard .popular-box,
+  .home-dashboard .answers-box{
+    display:block!important;
+    box-sizing:border-box!important;
+    width:100%!important;
+    max-width:100%!important;
+    margin:0 0 16px 0!important;
+    padding:16px!important;
+    overflow:hidden!important;
+  }
+  .home-dashboard .popular-list,
+  .home-dashboard .popular-item{
+    box-sizing:border-box!important;
+    width:100%!important;
+    max-width:100%!important;
+  }
+  .home-dashboard .popular-item{
+    grid-template-columns:36px minmax(0,1fr) 16px!important;
+    overflow:hidden!important;
+  }
+  .home-dashboard .popular-item span{
+    min-width:0!important;
+    overflow:hidden!important;
+    text-overflow:ellipsis!important;
+    white-space:nowrap!important;
+  }
+  .home-dashboard .answer-cards{
+    display:block!important;
+    width:100%!important;
+    max-width:100%!important;
+    overflow:visible!important;
+  }
+  .home-dashboard .answer-card{
+    box-sizing:border-box!important;
+    display:block!important;
+    width:100%!important;
+    max-width:100%!important;
+    margin:0 0 12px 0!important;
+  }
+}
+
 </style>
 </head>
 <body>
