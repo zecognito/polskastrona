@@ -636,6 +636,28 @@ header{box-shadow:none!important;border-bottom:1px solid #f1dfe5!important}.nav{
   .dashboard-shell .answer-card{width:100%;min-width:0;max-width:100%;min-height:125px}
 }
 
+
+/* HANKA MOBILE — Polecane odpowiedzi vertical stack */
+@media(max-width:900px){
+  .dashboard-shell .answer-cards{
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr)!important;
+    gap:12px!important;
+    width:100%!important;
+    overflow:visible!important;
+    scrollbar-width:none!important;
+  }
+  .dashboard-shell .answer-cards::-webkit-scrollbar{display:none!important}
+  .dashboard-shell .answer-card{
+    display:flex!important;
+    width:100%!important;
+    max-width:100%!important;
+    min-width:0!important;
+    flex:none!important;
+    margin:0!important;
+  }
+}
+
 </style>
 </head>
 <body>
