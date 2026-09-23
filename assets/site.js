@@ -120,3 +120,17 @@
   nav.innerHTML = '<a href="/o-nas/">O nas</a><span aria-hidden="true">·</span><a href="/kontakt/">Kontakt</a><span aria-hidden="true">·</span><a href="/zrodla/">Źródła</a><span aria-hidden="true">·</span><a href="/prywatnosc/">Prywatność</a>';
   wrap.appendChild(nav);
 })();
+
+
+// Zapytaj Hanki favicon — use a new URL to bypass stale browser favicon caches.
+(() => {
+  const href = '/hanka-favicon.png';
+  let icon = document.querySelector('link[rel~="icon"]');
+  if (!icon) {
+    icon = document.createElement('link');
+    icon.rel = 'icon';
+    document.head.appendChild(icon);
+  }
+  icon.type = 'image/png';
+  icon.href = href;
+})();
