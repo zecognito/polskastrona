@@ -95,3 +95,16 @@
     addDisclaimer();
   }
 })();
+
+
+(() => {
+  const footer = document.querySelector('footer.footer');
+  if (!footer || footer.querySelector('.footer-trust')) return;
+  const wrap = footer.querySelector('.wrap');
+  if (!wrap) return;
+  const nav = document.createElement('div');
+  nav.className = 'footer-trust';
+  nav.setAttribute('aria-label', 'Informacje o serwisie');
+  nav.innerHTML = '<a href="/o-nas/">O nas</a><span aria-hidden="true">·</span><a href="/kontakt/">Kontakt</a><span aria-hidden="true">·</span><a href="/zrodla/">Źródła</a><span aria-hidden="true">·</span><a href="/prywatnosc/">Prywatność</a>';
+  wrap.appendChild(nav);
+})();
