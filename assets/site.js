@@ -100,6 +100,18 @@
 (() => {
   const footer = document.querySelector('footer.footer');
   if (!footer || footer.querySelector('.footer-trust')) return;
+
+  // Some pages already include the approved trust links as static footer markup.
+  // Treat that existing block as authoritative instead of injecting a duplicate.
+  const trustPaths = ['/o-nas/', '/kontakt/', '/zrodla/', '/prywatnosc/'];
+  const existingTrustLinks = Array.from(footer.querySelectorAll('a[href]'));
+  const hasStaticTrustLinks = trustPaths.every((path) =>
+    existingTrustLinks.some((link) => {
+      try { return new URL(link.href, location.origin).pathname === path; } catch (_) { return false; }
+    })
+  );
+  if (hasStaticTrustLinks) return;
+
   const wrap = footer.querySelector('.wrap');
   if (!wrap) return;
   const nav = document.createElement('div');
