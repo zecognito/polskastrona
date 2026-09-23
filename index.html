@@ -621,90 +621,19 @@ header{box-shadow:none!important;border-bottom:1px solid #f1dfe5!important}.nav{
 }
 
 
-/* HANKA MOBILE — dashboard cards fit phone viewport */
-@media(max-width:560px){
-  .home-dashboard>.wrap{padding-left:16px!important;padding-right:16px!important}
-  .dash-grid{width:100%!important;max-width:100%!important;min-width:0!important}
-  .popular-box,.answers-box{
-    width:auto!important;
-    max-width:100%!important;
-    min-width:0!important;
-    margin-left:0!important;
-    margin-right:0!important;
-    padding:16px!important;
-  }
-  .popular-list,.popular-item{width:100%!important;max-width:100%!important;min-width:0!important}
-  .popular-item{grid-template-columns:34px minmax(0,1fr) auto!important}
-  .answer-cards{
-    width:100%!important;
-    max-width:100%!important;
-    min-width:0!important;
-    display:grid!important;
-    grid-template-columns:1fr!important;
-    overflow:visible!important;
-  }
-  .answer-card{
-    width:100%!important;
-    max-width:100%!important;
-    min-width:0!important;
-    flex:none!important;
-  }
-}
 
-
-/* HANKA MOBILE — dashboard true viewport sizing */
+/* HANKA DASHBOARD — isolated sizing */
+.dashboard-shell{max-width:1180px;margin:0 auto;padding:0 22px}
 @media(max-width:560px){
-  .home-dashboard{width:100%!important;max-width:100vw!important;overflow:hidden!important}
-  .home-dashboard>.wrap{
-    width:auto!important;
-    max-width:none!important;
-    margin:0 16px!important;
-    padding:0!important;
-  }
-  .home-dashboard .dash-grid{
-    display:block!important;
-    width:100%!important;
-    max-width:100%!important;
-  }
-  .home-dashboard .popular-box,
-  .home-dashboard .answers-box{
-    display:block!important;
-    box-sizing:border-box!important;
-    width:100%!important;
-    max-width:100%!important;
-    margin:0 0 16px 0!important;
-    padding:16px!important;
-    overflow:hidden!important;
-  }
-  .home-dashboard .popular-list,
-  .home-dashboard .popular-item{
-    box-sizing:border-box!important;
-    width:100%!important;
-    max-width:100%!important;
-  }
-  .home-dashboard .popular-item{
-    grid-template-columns:36px minmax(0,1fr) 16px!important;
-    overflow:hidden!important;
-  }
-  .home-dashboard .popular-item span{
-    min-width:0!important;
-    overflow:hidden!important;
-    text-overflow:ellipsis!important;
-    white-space:nowrap!important;
-  }
-  .home-dashboard .answer-cards{
-    display:block!important;
-    width:100%!important;
-    max-width:100%!important;
-    overflow:visible!important;
-  }
-  .home-dashboard .answer-card{
-    box-sizing:border-box!important;
-    display:block!important;
-    width:100%!important;
-    max-width:100%!important;
-    margin:0 0 12px 0!important;
-  }
+  .dashboard-shell{width:100%;max-width:100%;padding:0 16px;margin:0}
+  .dashboard-shell .dash-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;width:100%}
+  .dashboard-shell .popular-box,
+  .dashboard-shell .answers-box{width:100%;min-width:0;max-width:100%;padding:16px;border-radius:20px;overflow:hidden}
+  .dashboard-shell .popular-list{width:100%;min-width:0}
+  .dashboard-shell .popular-item{width:100%;min-width:0;grid-template-columns:36px minmax(0,1fr) 16px}
+  .dashboard-shell .popular-item span{min-width:0}
+  .dashboard-shell .answer-cards{display:grid;grid-template-columns:minmax(0,1fr);gap:12px;width:100%;overflow:visible}
+  .dashboard-shell .answer-card{width:100%;min-width:0;max-width:100%;min-height:125px}
 }
 
 </style>
@@ -727,7 +656,7 @@ header{box-shadow:none!important;border-bottom:1px solid #f1dfe5!important}.nav{
 
 <section class="topic-rail"><div class="wrap"><div class="topic-scroll"><a class="topic-tile" href="/pieniadze/"><span class="topic-emoji">💵</span>Pieniądze</a><a class="topic-tile" href="/dom/"><span class="topic-emoji">🏠</span>Dom</a><a class="topic-tile" href="/samochod/"><span class="topic-emoji">🚗</span>Samochód</a><a class="topic-tile" href="/#tematy"><span class="topic-emoji">🪪</span>Dokumenty</a><a class="topic-tile" href="/praca/"><span class="topic-emoji">💼</span>Praca</a><a class="topic-tile" href="/#tematy"><span class="topic-emoji">❤️</span>Zdrowie</a><a class="topic-tile" href="/emerytura/"><span class="topic-emoji">🪑</span>Emerytura</a><a class="topic-tile" href="/podatki/"><span class="topic-emoji">🧾</span>Podatki</a><a class="topic-tile" href="/illinois/"><span class="topic-emoji">🇺🇸</span>Stany USA</a></div></div></section>
 
-<section class="home-dashboard"><div class="wrap"><div class="dash-grid"><div class="popular-box"><h2 class="dash-title"><span>★</span> Popularne tematy</h2><div class="popular-list"><a class="popular-item" href="/illinois/prawo-jazdy/"><b>1</b><span>Jak zrobić prawo jazdy w Illinois?</span><i>›</i></a><a class="popular-item" href="/emerytura/social-security/"><b>2</b><span>Social Security — jak to działa?</span><i>›</i></a><a class="popular-item" href="/texas/"><b>3</b><span>Podatki i życie w Teksasie</span><i>›</i></a><a class="popular-item" href="/pieniadze/credit-score/"><b>4</b><span>Jak zbudować credit score?</span><i>›</i></a><a class="popular-item" href="/emerytura/"><b>5</b><span>Emerytura w USA</span><i>›</i></a></div></div><div class="answers-box"><h2 class="dash-title">Polecane odpowiedzi</h2><div class="answer-cards"><a class="answer-card" href="/pieniadze/credit-score/"><span class="mini">PIENIĄDZE</span><strong>Credit score w USA — jak działa i jak go zbudować?</strong><span class="go">Czytaj →</span></a><a class="answer-card" href="/emerytura/social-security/"><span class="mini">EMERYTURA</span><strong>Social Security — jak działa amerykańska emerytura?</strong><span class="go">Czytaj →</span></a><a class="answer-card" href="/samochod/kupno-samochodu/"><span class="mini">SAMOCHÓD</span><strong>Jak kupić samochód w USA bez zgadywania?</strong><span class="go">Czytaj →</span></a></div></div></div></div></section>
+<section class="home-dashboard"><div class="dashboard-shell"><div class="dash-grid"><div class="popular-box"><h2 class="dash-title"><span>★</span> Popularne tematy</h2><div class="popular-list"><a class="popular-item" href="/illinois/prawo-jazdy/"><b>1</b><span>Jak zrobić prawo jazdy w Illinois?</span><i>›</i></a><a class="popular-item" href="/emerytura/social-security/"><b>2</b><span>Social Security — jak to działa?</span><i>›</i></a><a class="popular-item" href="/texas/"><b>3</b><span>Podatki i życie w Teksasie</span><i>›</i></a><a class="popular-item" href="/pieniadze/credit-score/"><b>4</b><span>Jak zbudować credit score?</span><i>›</i></a><a class="popular-item" href="/emerytura/"><b>5</b><span>Emerytura w USA</span><i>›</i></a></div></div><div class="answers-box"><h2 class="dash-title">Polecane odpowiedzi</h2><div class="answer-cards"><a class="answer-card" href="/pieniadze/credit-score/"><span class="mini">PIENIĄDZE</span><strong>Credit score w USA — jak działa i jak go zbudować?</strong><span class="go">Czytaj →</span></a><a class="answer-card" href="/emerytura/social-security/"><span class="mini">EMERYTURA</span><strong>Social Security — jak działa amerykańska emerytura?</strong><span class="go">Czytaj →</span></a><a class="answer-card" href="/samochod/kupno-samochodu/"><span class="mini">SAMOCHÓD</span><strong>Jak kupić samochód w USA bez zgadywania?</strong><span class="go">Czytaj →</span></a></div></div></div></div></section>
 
 <section class="trust-strip"><div class="wrap trust-inner"><span><b>✓</b> Praktyczne wyjaśnienia</span><span><b>✓</b> Źródła i oficjalne informacje</span><span><b>✓</b> 10 stanów i setki przewodników</span></div></section>
 
