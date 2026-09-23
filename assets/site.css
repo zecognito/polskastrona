@@ -100,3 +100,7 @@
 .brand-stacked .brand-name{display:block;margin:0;position:static;top:auto;font-size:1em;font-weight:850;letter-spacing:-1.15px;color:var(--ink);white-space:nowrap}
 .brand-stacked small{display:block;width:100%;font-size:.38em;font-weight:850;line-height:1.05;letter-spacing:.31em;text-indent:.31em;text-align:center;color:var(--red);white-space:nowrap}
 @media(max-width:560px){.site-header .brand-stacked{font-size:23px;gap:2px}.brand-stacked .brand-name{letter-spacing:-.95px}.brand-stacked small{font-size:.39em;letter-spacing:.285em;text-indent:.285em}}
+
+/* Trust and legal footer navigation */
+.footer-trust{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px;font-size:13px;color:var(--muted)}
+.footer-trust a{text-decoration:none;color:inherit}.footer-trust a:hover{text-decoration:underline;color:var(--ink)}
