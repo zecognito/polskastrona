@@ -1,4 +1,4 @@
-# PolskaStrona.com — architektura informacji
+# Zapytaj Hanki — architektura informacji
 
 ## Zasada nadrzędna
 Struktura ma obsłużyć setki i docelowo tysiące wartościowych poradników bez tworzenia cienkich stron. Polski startuje pierwszy; przyszłe języki mogą korzystać z prefiksów `/pl/`, `/en/`, `/uk/` po decyzji o ekspansji.
