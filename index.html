@@ -582,6 +582,44 @@ header{box-shadow:none!important;border-bottom:1px solid #f1dfe5!important}.nav{
   .journey{overflow:hidden!important}
 }
 
+
+/* HANKA MOBILE — dashboard width correction */
+@media(max-width:560px){
+  .home-dashboard>.wrap{
+    padding-left:16px!important;
+    padding-right:16px!important;
+  }
+  .dash-grid{
+    width:100%!important;
+    max-width:100%!important;
+    min-width:0!important;
+  }
+  .popular-box,.answers-box{
+    width:auto!important;
+    max-width:100%!important;
+    min-width:0!important;
+    margin-left:0!important;
+    margin-right:0!important;
+    padding:16px!important;
+  }
+  .popular-list,.popular-item{
+    width:100%!important;
+    max-width:100%!important;
+    min-width:0!important;
+  }
+  .popular-item{
+    grid-template-columns:38px minmax(0,1fr) auto!important;
+  }
+  .popular-item span{
+    min-width:0!important;
+    overflow-wrap:anywhere!important;
+  }
+  .answer-cards{
+    width:100%!important;
+    max-width:100%!important;
+  }
+}
+
 </style>
 </head>
 <body>
