@@ -1,4 +1,4 @@
-# PolskaStrona.com — pre-launch audit
+# Zapytaj Hanki — pre-launch audit
 
 Audit date: 2026-09-23
 
