@@ -606,6 +606,23 @@ header{box-shadow:none!important;border-bottom:1px solid #f1dfe5!important}.nav{
   .answer-card{flex-basis:84%!important}
 }
 
+
+/* HANKA MOBILE OVERFLOW LOCK */
+@media(max-width:560px){
+  html{width:100%!important;max-width:100%!important;overflow-x:clip!important}
+  body{width:100%!important;max-width:100%!important;overflow-x:clip!important;position:relative!important}
+  header,main,footer,.hero-real,.topic-rail,.home-dashboard,.section,.trust-strip{
+    width:100%!important;max-width:100%!important;overflow-x:clip!important
+  }
+  header .wrap,.hero-search-wrap,.topic-rail>.wrap,.home-dashboard>.wrap,.section>.wrap,footer>.wrap{
+    width:100%!important;max-width:100%!important;min-width:0!important;margin-left:auto!important;margin-right:auto!important
+  }
+  .dash-grid,.popular-box,.answers-box,.popular-list,.popular-item{
+    min-width:0!important;max-width:100%!important
+  }
+  .topic-scroll,.answer-cards{max-width:100%!important}
+}
+
 </style>
 </head>
 <body>
@@ -710,4 +727,21 @@ header{box-shadow:none!important;border-bottom:1px solid #f1dfe5!important}.nav{
   });
 })();
 </script>
+
+<script id="mobile-horizontal-reset">
+(() => {
+  const resetX = () => {
+    if (window.innerWidth <= 560) {
+      const y = window.scrollY;
+      window.scrollTo(0, y);
+      document.documentElement.scrollLeft = 0;
+      document.body.scrollLeft = 0;
+    }
+  };
+  window.addEventListener('load', resetX, {once:true});
+  window.addEventListener('pageshow', resetX);
+  window.addEventListener('resize', resetX);
+})();
+</script>
+
 </body></html>
