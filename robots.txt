@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://polskastrona.com/sitemap.xml
+Sitemap: https://zapytajhanki.com/sitemap.xml
