@@ -1,4 +1,4 @@
-# Szablon poradnika PolskaStrona.com
+# Szablon poradnika Zapytaj Hanki
 
 ## H1
 Naturalny tytuł po polsku. Amerykański termin zachowujemy, gdy jest faktycznie używany lub pomaga użytkownikowi rozpoznać temat.
