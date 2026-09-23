@@ -460,11 +460,45 @@ header{background:rgba(255,250,252,.94);border-bottom-color:#f0dfe5;box-shadow:0
 .states{background:linear-gradient(135deg,#fff1f5,#f2f8f2);border-color:#eedfe4}.state{border-color:#e6dfe1;color:#416f50}.state:hover{border-color:#bdd4c2;box-shadow:0 8px 20px rgba(65,111,80,.08)}
 footer{border-color:#eee1e5;background:#fffafd}
 @media(max-width:480px){.hankabrand{font-size:18px}.hanka-mark{width:34px;height:34px;font-size:20px}.hero{padding-top:62px}.hero h1{font-size:48px}.hero h1 em{display:inline}.hero .eyebrow{font-size:12px}}
+
+/* ZAPYTAJ HANKI — homepage direction 2 */
+:root{--h-pink:#ef7fa2;--h-pink-soft:#fff0f5;--h-green:#4f7d5b;--h-green-soft:#edf6ef;--h-cream:#fff9f1;--h-ink:#284634;--h-muted:#68776d}
+body{background:#fff;color:var(--h-ink)}
+header{background:rgba(255,255,255,.94);border-bottom:1px solid #f0e3e7;box-shadow:0 8px 30px rgba(73,58,63,.045)}
+.nav{height:74px}.links{justify-content:flex-end}.links a{font-size:14px;font-weight:720}
+.hankabrand{gap:11px}.hankabrand>span:last-child{line-height:.92}.hankabrand b{color:#e4658d}.hankabrand small{color:#6f9b78;letter-spacing:.14em}
+.hanka-mark{position:relative;overflow:hidden;width:42px;height:42px;background:#fff1f5;border:2px solid #fff;box-shadow:0 4px 15px rgba(211,98,135,.2)}
+.hanka-mark .hair{position:absolute;width:29px;height:31px;left:6px;top:5px;border-radius:50% 50% 42% 42%;background:#f2cf63}
+.hanka-mark .face{position:absolute;width:21px;height:23px;left:10px;top:10px;border-radius:48% 48% 46% 46%;background:#ffe5d5}
+.hanka-mark .eyes:before,.hanka-mark .eyes:after{content:"";position:absolute;width:2.5px;height:2.5px;border-radius:50%;background:#355443;top:18px}
+.hanka-mark .eyes:before{left:15px}.hanka-mark .eyes:after{right:14px}
+.hanka-mark .smile{position:absolute;width:7px;height:4px;border-bottom:1.7px solid #c76c78;border-radius:0 0 8px 8px;left:17px;top:23px}
+.hero{padding:68px 0 30px;text-align:left;background:radial-gradient(circle at 9% 16%,rgba(247,200,215,.28),transparent 25%),radial-gradient(circle at 91% 35%,rgba(126,170,134,.15),transparent 25%)}
+.hero:after{display:none}.hero-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(300px,.65fr);align-items:center;gap:54px}
+.hero-copy .eyebrow{font-size:12px;letter-spacing:.18em;color:#d95f86}.hero h1{margin:13px 0 20px;max-width:700px;font-size:clamp(54px,6.5vw,82px);line-height:.96;letter-spacing:-.06em}.hero h1 em{color:#e56c92}.hero .lead{margin:0;max-width:640px;font-size:18px;line-height:1.65}
+.hanka-hero{position:relative;min-height:330px;display:grid;place-items:center}.hanka-portrait{position:relative;width:238px;height:280px;border-radius:46% 46% 38% 38%;background:linear-gradient(180deg,#fff4f7,#f4f9f2);box-shadow:0 28px 70px rgba(111,83,92,.13);border:1px solid #f1e4e8;overflow:hidden}
+.portrait-hair{position:absolute;width:175px;height:190px;left:31px;top:24px;border-radius:48% 48% 40% 40%;background:linear-gradient(145deg,#f5d76f,#eabf4f);transform:rotate(-2deg)}
+.portrait-face{position:absolute;width:126px;height:151px;left:56px;top:52px;border-radius:48% 48% 45% 45%;background:#ffe4d3;box-shadow:inset 0 -7px 0 rgba(240,171,163,.08)}
+.portrait-eye{position:absolute;width:8px;height:10px;border-radius:50%;background:#385343;top:65px}.portrait-eye.left{left:34px}.portrait-eye.right{right:34px}.portrait-smile{position:absolute;width:30px;height:15px;border-bottom:4px solid #d87780;border-radius:0 0 30px 30px;left:48px;top:96px}
+.portrait-body{position:absolute;width:190px;height:110px;left:24px;bottom:-44px;border-radius:50% 50% 0 0;background:#6f9f79}
+.hero-bubble{position:absolute;z-index:2;right:2px;top:30px;background:#fff;border:1px solid #f0dce3;border-radius:18px 18px 18px 5px;padding:11px 15px;font-weight:800;box-shadow:0 10px 28px rgba(107,76,86,.1);transform:rotate(2deg)}
+.hero-note{position:absolute;z-index:2;left:-8px;bottom:35px;background:#fff;border:1px solid #dfeadf;border-radius:15px;padding:10px 13px;box-shadow:0 10px 28px rgba(65,111,80,.1);display:flex;flex-direction:column;font-size:12px}.hero-note b{color:#4f7d5b;font-size:13px}.hero-note span{color:#78847c}
+.search{max-width:780px;margin:30px 0 0;border:1.5px solid #e8cbd5!important;border-radius:18px!important;box-shadow:0 15px 38px rgba(128,84,99,.1)!important}.search button{background:#4f7d5b!important}.quick{justify-content:flex-start;max-width:780px}
+.trust-strip{border-top:1px solid #f4e8eb;border-bottom:1px solid #eef1ed;background:linear-gradient(90deg,#fff8fa,#fbfdf9);margin-top:28px}.trust-inner{min-height:64px;display:flex;align-items:center;justify-content:center;gap:42px;color:#64746a;font-size:13px;font-weight:700}.trust-inner b{display:inline-grid;place-items:center;width:20px;height:20px;border-radius:50%;background:#e9f4eb;color:#4f7d5b;margin-right:7px}
+.section{padding:54px 0}.section-head h2{font-size:34px}.section-head h2:after{background:#e56c92}
+.grid{gap:15px}.card{border-radius:22px;padding:23px;min-height:168px;background:#fff}.card:nth-child(3n+1) .icon{background:#fff2f6;border-color:#f2dce4;color:#d95f86}.card:nth-child(3n+2) .icon{background:#eff7f0;border-color:#dbe9dd;color:#4f7d5b}.card:nth-child(3n) .icon{background:#fff9ec;border-color:#f1e7c9;color:#a47b2e}
+.journey{border-radius:24px}.journey:nth-child(1){background:linear-gradient(145deg,#4f7d5b,#365d42)}.journey:nth-child(2){background:linear-gradient(145deg,#ec86a6,#c95f82)}.journey:nth-child(3){background:linear-gradient(145deg,#6b9272,#416f50)}
+.states{border-radius:28px;padding:34px;background:linear-gradient(135deg,#fff2f6,#f2f8f2)}
+footer{margin-top:72px;background:#fff8fa}.foot strong{color:#d95f86}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr .55fr;gap:22px}.hanka-portrait{width:205px;height:250px}.portrait-hair{left:25px}.portrait-face{left:43px}.hanka-hero{min-height:285px}.hero-note{display:none}}
+@media(max-width:720px){.nav{height:66px}.hero{padding:46px 0 24px}.hero-grid{grid-template-columns:1fr}.hero-copy{text-align:left}.hero h1{font-size:54px}.hanka-hero{min-height:245px;margin-top:2px}.hanka-portrait{width:180px;height:220px}.portrait-hair{width:145px;height:165px;left:18px;top:18px}.portrait-face{width:108px;height:130px;left:36px;top:42px}.portrait-eye{top:55px}.portrait-smile{left:40px;top:82px}.portrait-body{width:155px;left:13px}.hero-bubble{right:calc(50% - 125px);top:15px}.search{margin-top:25px}.trust-inner{justify-content:flex-start;overflow-x:auto;gap:22px;padding-top:14px;padding-bottom:14px;white-space:nowrap}.section{padding:40px 0}}
+@media(max-width:480px){.hankabrand small{font-size:7px}.hero h1{font-size:48px}.hero .lead{font-size:16.5px}.hanka-hero{min-height:215px}.hanka-portrait{width:160px;height:195px}.portrait-hair{width:132px;height:150px;left:14px}.portrait-face{width:98px;height:119px;left:31px}.portrait-eye.left{left:27px}.portrait-eye.right{right:27px}.portrait-smile{left:35px}.hero-bubble{right:calc(50% - 112px);font-size:13px}.grid{grid-template-columns:1fr 1fr}.card{min-height:154px;padding:17px}.section-head h2{font-size:29px}.states{padding:24px}}
+
 </style>
 </head>
 <body>
 <header><div class="wrap nav">
-  <a class="brand hankabrand" href="/" aria-label="Zapytaj Hanki"><span class="hanka-mark">H</span><span><b>Zapytaj</b> Hanki<small>AMERYKA PO POLSKU</small></span></a>
+  <a class="brand hankabrand" href="/" aria-label="Zapytaj Hanki"><span class="hanka-mark" aria-hidden="true"><i class="hair"></i><i class="face"></i><i class="eyes"></i><i class="smile"></i></span><span><b>Zapytaj</b> Hanki<small>AMERYKA PO POLSKU</small></span></a>
   <nav class="links" id="siteNav" aria-label="Główna nawigacja"><a href="/pieniadze/">Pieniądze</a><a href="/dom/">Dom</a><a href="/samochod/">Samochód</a><a href="/praca/">Praca</a><a href="/emerytura/">Emerytura</a><a href="#tematy">Więcej</a></nav>
   <button class="menu" type="button" aria-label="Otwórz menu" aria-controls="siteNav" aria-expanded="false">Menu</button>
 
@@ -472,10 +506,12 @@ footer{border-color:#eee1e5;background:#fffafd}
 
 <main>
 <section class="hero"><div class="wrap">
-  <div class="eyebrow">Cześć, tu Hanka 👋</div><h1>Nie wiesz?<br><em>Zapytaj Hanki.</em></h1><p class="lead">Praktyczne odpowiedzi o życiu w USA — po polsku. Bez urzędowego bełkotu, za to z konkretnymi źródłami.</p>
+  <div class="hero-grid"><div class="hero-copy"><div class="eyebrow">AMERYKA PO POLSKU</div><h1>Nie wiesz?<br><em>Zapytaj Hanki.</em></h1><p class="lead">Praktyczne odpowiedzi o życiu w USA — po polsku. Hanka pomaga znaleźć konkretną odpowiedź i pokazuje, gdzie sprawdzić najważniejsze informacje.</p></div><div class="hanka-hero" aria-hidden="true"><div class="hero-bubble">Cześć! 👋</div><div class="hanka-portrait"><div class="portrait-hair"></div><div class="portrait-face"><span class="portrait-eye left"></span><span class="portrait-eye right"></span><span class="portrait-smile"></span></div><div class="portrait-body"></div></div><div class="hero-note"><b>Po ludzku.</b><span>Bez urzędowego bełkotu.</span></div></div></div>
   <form class="search" id="site-search" role="search"><label class="sr-only" for="site-search-input">Zapytaj Hanki</label><input id="site-search-input" name="q" type="search" autocomplete="off" placeholder="Np. credit score, mortgage, W-2..."><button type="submit">Szukaj</button></form>
   <div class="quick"><a class="pill" href="/pieniadze/credit-score/">credit score</a><a class="pill" href="/#tematy">prawo jazdy</a><a class="pill" href="/dom/mortgage/">mortgage</a><a class="pill" href="/emerytura/social-security/">Social Security</a><a class="pill" href="/praca/w2-vs-1099/">W-2 vs 1099</a></div>
 </div></section>
+
+<section class="trust-strip"><div class="wrap trust-inner"><span><b>✓</b> Praktyczne wyjaśnienia</span><span><b>✓</b> Źródła i oficjalne informacje</span><span><b>✓</b> 10 stanów i setki przewodników</span></div></section>
 
 <section class="section" id="tematy"><div class="wrap">
  <div class="section-head"><div><div class="eyebrow">Tematy</div><h2>Wszystko w jednym miejscu.</h2></div><p>Nie musisz znać urzędowego języka. Wybierz temat albo po prostu wyszukaj problem.</p></div>
