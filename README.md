@@ -1,4 +1,4 @@
-# PolskaStrona.com
+# Zapytaj Hanki
 
 Polskojęzyczny praktyczny przewodnik po życiu w Stanach Zjednoczonych.
 
