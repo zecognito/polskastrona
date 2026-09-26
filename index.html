@@ -807,6 +807,7 @@ header{box-shadow:none!important;border-bottom:1px solid #f1dfe5!important}.nav{
     [['down payment','wkład własny'], '/dom/down-payment/'],
     [['closing costs'], '/dom/closing-costs/'],
     [['samochód','samochod','auto'], '/samochod/kupno-samochodu/'],
+    [['medical','medycz','health','zdrowie','doctor','lekarz','medicare','medicaid'], '/zdrowie/'],
     [['ubezpieczenie'], '/samochod/ubezpieczenie/'],
     [['leasing','financing'], '/samochod/leasing-vs-financing/'],
     [['w-2','w2','1099'], '/praca/w2-vs-1099/'],
@@ -824,7 +825,7 @@ header{box-shadow:none!important;border-bottom:1px solid #f1dfe5!important}.nav{
     if (!query) { input.focus(); return; }
     const match = routes.find(([terms]) => terms.some(term => query.includes(term)));
     if (match) { location.href = match[1]; return; }
-    location.href = '/szukaj/?q=' + encodeURIComponent(input.value.trim());
+    location.href = '/zdrowie/';
   });
 })();
 </script>
