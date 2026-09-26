@@ -20,6 +20,16 @@
     if (event.target.closest('a')) close();
   });
 
+  document.addEventListener('pointerdown', (event) => {
+    if (nav.classList.contains('is-open') && !nav.contains(event.target) && !button.contains(event.target)) close();
+  });
+
+  let lastScrollY = scrollY;
+  addEventListener('scroll', () => {
+    if (nav.classList.contains('is-open') && Math.abs(scrollY - lastScrollY) > 8) close();
+    lastScrollY = scrollY;
+  }, { passive: true });
+
   document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape') close();
   });
