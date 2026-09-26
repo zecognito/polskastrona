@@ -866,4 +866,20 @@ header{box-shadow:none!important;border-bottom:1px solid #f1dfe5!important}.nav{
 
 </body></html>
 
-<style>@media(max-width:820px){.zh-home-nav-test .zh-nav-meta a,.zh-home-nav-test .zh-nav-meta a:focus,.zh-home-nav-test .zh-nav-meta a:active,.zh-home-nav-test .zh-nav-meta a:hover{background:transparent!important;box-shadow:none!important;outline:none!important}}</style>
+<style>/* zh-home-nav-meta-clean */
+@media(max-width:820px){
+  .zh-home-nav-test.is-open .zh-nav-meta{justify-content:space-between!important;padding:6px 48px 1px!important}
+  .zh-home-nav-test.is-open .zh-nav-meta a,
+  .zh-home-nav-test.is-open .zh-nav-meta a:link,
+  .zh-home-nav-test.is-open .zh-nav-meta a:visited,
+  .zh-home-nav-test.is-open .zh-nav-meta a:hover,
+  .zh-home-nav-test.is-open .zh-nav-meta a:focus,
+  .zh-home-nav-test.is-open .zh-nav-meta a:focus-visible,
+  .zh-home-nav-test.is-open .zh-nav-meta a:active{
+    background:none!important;background-color:transparent!important;background-image:none!important;
+    box-shadow:none!important;outline:0!important;border:0!important;filter:none!important;
+    color:#b3b7b4!important;-webkit-tap-highlight-color:transparent!important;
+  }
+  .zh-home-nav-test.is-open .zh-nav-meta a+a:before{color:#e4dfe1!important}
+}
+</style>
