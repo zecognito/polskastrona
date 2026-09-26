@@ -712,6 +712,17 @@ header{box-shadow:none!important;border-bottom:1px solid #f1dfe5!important}.nav{
 }
 
 </style>
+<style>
+/* Compact premium topic rail */
+.topic-scroll{display:flex!important;gap:10px!important;overflow-x:auto!important;padding:12px 24px 14px!important;scroll-snap-type:x proximity;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.topic-scroll::-webkit-scrollbar{display:none}
+.topic-tile{position:relative;flex:0 0 auto!important;min-width:0!important;height:auto!important;padding:10px 14px!important;border:1px solid #f0dde3!important;border-radius:999px!important;background:linear-gradient(135deg,#fffafb 0%,#fff 100%)!important;box-shadow:0 5px 16px rgba(83,48,59,.06)!important;display:flex!important;align-items:center!important;gap:8px!important;font-size:14px!important;font-weight:800!important;line-height:1.1!important;color:#315d43!important;scroll-snap-align:start}
+.topic-tile::after{content:"›";color:#e75d8d;font-size:18px;line-height:1;margin-left:1px}
+.topic-emoji{font-size:17px!important;line-height:1!important;margin:0!important}
+.topic-tile[href="/palcem-po-mapie/"]{padding-right:15px!important;background:linear-gradient(135deg,#fff4f8,#fff)!important;border-color:#efcbd8!important}
+.topic-tile[href="/palcem-po-mapie/"]::before{content:"NOWE";font-size:8px;letter-spacing:.08em;color:#d94f80;background:#fde5ee;border-radius:999px;padding:3px 5px;margin-right:1px}
+@media(max-width:700px){.topic-scroll{padding:10px 24px 13px!important;gap:8px!important}.topic-tile{padding:9px 12px!important;font-size:13px!important}.topic-emoji{font-size:16px!important}}
+</style>
 </head>
 <body>
 <header><div class="wrap nav">
