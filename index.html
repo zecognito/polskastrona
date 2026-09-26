@@ -823,7 +823,8 @@ header{box-shadow:none!important;border-bottom:1px solid #f1dfe5!important}.nav{
     const query = input.value.trim().toLocaleLowerCase('pl');
     if (!query) { input.focus(); return; }
     const match = routes.find(([terms]) => terms.some(term => query.includes(term)));
-    location.href = match ? match[1] : '/#tematy';
+    if (match) { location.href = match[1]; return; }
+    location.href = '/szukaj/?q=' + encodeURIComponent(input.value.trim());
   });
 })();
 </script>
