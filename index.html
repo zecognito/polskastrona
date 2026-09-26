@@ -806,6 +806,14 @@ header{box-shadow:none!important;border-bottom:1px solid #f1dfe5!important}.nav{
     event.preventDefault();
     const raw=input.value.trim(); if(!raw){input.focus();return;}
     let q=norm(raw); q=q.replace(/\bprawko\b/g,'prawo jazdy'); q=q.split(' ').map(w=>aliases[w]||w).join(' '); const words=q.split(' ').filter(Boolean);
+    const generic = {
+      'prawo jazdy':'/samochod/prawo-jazdy-w-usa/',
+      'real id':'/dokumenty/real-id/',
+      'credit score':'/pieniadze/credit-score/',
+      'mortgage':'/dom/mortgage/',
+      'social security':'/emerytura/social-security/'
+    };
+    if(generic[q] && searchIndex.some(x=>x.u===generic[q])){location.href=generic[q];return;}
     const scored=searchIndex.map(x=>{const hay=norm(x.t);let score=0;for(const w of words){if(hay===w)score+=12;else if(hay.includes(w))score+=5;}if(hay.includes(q))score+=18;const depth=x.u.split('/').filter(Boolean).length;if(depth===1)score+=3;return {...x,score};}).filter(x=>x.score>0).sort((a,b)=>b.score-a.score||a.u.localeCompare(b.u));
     if(scored.length){location.href=scored[0].u;return;}
     const empty=document.getElementById('search-empty'), copy=document.getElementById('search-empty-copy');
